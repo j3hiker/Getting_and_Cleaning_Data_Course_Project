@@ -1,7 +1,7 @@
 
 ###                       Data Dictionary for UCI HAR Mean and Std Averages
 
-File name: UCI_HAR_Mean_and_Std_Averages.csv
+File name: UCI_HAR_Mean_and_Std_Averages.txt
 
 Note: The acceleration signal from the smartphone accelerometer X axis is in standard gravity units 'g'
 

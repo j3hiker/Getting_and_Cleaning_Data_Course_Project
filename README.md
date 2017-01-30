@@ -5,7 +5,7 @@ This dataset provides a summarization of a subset of signal measurements from th
 The new dataset consists of the following files:
 * ‘ReadMe.md’ – this file that describes how things fit together and the work performed to clean up the data
 *	‘UCI_HAR_Mean_and_Std_Averages.csv’– the merged dataset with averages of the mean and standard deviation of each measurement.
-  NOTE: to read the file use read.csv with row.names = 1 
+  NOTE: to read the file use read.table()
 * ‘CodeBook.md’ – describes the variables, the data, units of measurement 
 
 The script run_analysis.R was used to create the new dataset.

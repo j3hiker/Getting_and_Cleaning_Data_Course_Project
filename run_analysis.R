@@ -60,7 +60,6 @@ all_data              <- cbind(all_y,all_subject,all_X)
 ## Perform the summarization analysis
 averages <- ddply(all_data, .(activityName,subjectId), colMeans)
 
-
 ## Tidy up the column names a bit
 colnames(averages)    <- gsub("^f","freq",colnames(averages))
 colnames(averages)    <- gsub("^t","time",colnames(averages))
@@ -70,7 +69,7 @@ colnames(averages)    <- gsub("mean","Mean",colnames(averages))
 colnames(averages)    <- gsub("std","Std",colnames(averages))
 averages$activityName <- activityLabels[averages$activityName,2]
 
-## Output the file in .csv format
-outputfilename <- "./data/UCI HAR Dataset/UCI_HAR_Mean_and_Std_Averages.csv"
+## Output the file in .csv format to the working directory
+outputfilename <- "UCI_HAR_Mean_and_Std_Averages.csv"
 write.csv(averages, outputfilename)
 

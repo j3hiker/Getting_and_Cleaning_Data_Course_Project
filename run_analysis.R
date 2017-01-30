@@ -69,7 +69,7 @@ colnames(averages)    <- gsub("mean","Mean",colnames(averages))
 colnames(averages)    <- gsub("std","Std",colnames(averages))
 averages$activityName <- activityLabels[averages$activityName,2]
 
-## Output the file in .csv format to the working directory
-outputfilename <- "UCI_HAR_Mean_and_Std_Averages.csv"
-write.csv(averages, outputfilename)
+## Output the file to the working directory
+filename <- "UCI_HAR_Mean_and_Std_Averages.txt"
+write.table(averages, file=filename, row.name=FALSE)
 
